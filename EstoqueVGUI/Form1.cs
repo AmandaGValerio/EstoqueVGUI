@@ -22,9 +22,29 @@ namespace EstoqueVGUI
 
         }
 
+        private void BtnPecas_Click(object sender, EventArgs e)
+        {
+            (new PecasDB()).Show();
+        }
+
+        private void BtnCliente_Click(object sender, EventArgs e)
+        {
+            (new ClientesDB()).Show();
+        }
+
+        private void BtnServico_Click(object sender, EventArgs e)
+        {
+            (new ServicosDB()).Show();
+        }
+
+        private void BtnPedido_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
     }
 }

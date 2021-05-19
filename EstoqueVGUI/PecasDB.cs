@@ -23,5 +23,10 @@ namespace EstoqueVGUI
             this.pecasTableAdapter.Fill(this.estoqueDataSet.pecas);
 
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

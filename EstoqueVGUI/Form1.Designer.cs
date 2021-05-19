@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnBDEstoque = new System.Windows.Forms.Button();
+            this.BtnPecas = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnPedido = new System.Windows.Forms.Button();
+            this.BtnServico = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnCliente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // BtnBDEstoque
+            // BtnPecas
             // 
-            this.BtnBDEstoque.Location = new System.Drawing.Point(202, 88);
-            this.BtnBDEstoque.Name = "BtnBDEstoque";
-            this.BtnBDEstoque.Size = new System.Drawing.Size(221, 29);
-            this.BtnBDEstoque.TabIndex = 0;
-            this.BtnBDEstoque.Text = "Estoque";
-            this.BtnBDEstoque.UseVisualStyleBackColor = true;
-            this.BtnBDEstoque.Click += new System.EventHandler(this.button1_Click);
+            this.BtnPecas.Location = new System.Drawing.Point(202, 88);
+            this.BtnPecas.Name = "BtnPecas";
+            this.BtnPecas.Size = new System.Drawing.Size(221, 29);
+            this.BtnPecas.TabIndex = 0;
+            this.BtnPecas.Text = "Peças";
+            this.BtnPecas.UseVisualStyleBackColor = true;
+            this.BtnPecas.Click += new System.EventHandler(this.BtnPecas_Click);
             // 
             // label1
             // 
@@ -57,23 +57,25 @@
             this.label1.Text = "Menu Principal";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button2
+            // BtnPedido
             // 
-            this.button2.Location = new System.Drawing.Point(202, 141);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(221, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Pedido";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnPedido.Location = new System.Drawing.Point(202, 141);
+            this.BtnPedido.Name = "BtnPedido";
+            this.BtnPedido.Size = new System.Drawing.Size(221, 29);
+            this.BtnPedido.TabIndex = 2;
+            this.BtnPedido.Text = "Pedido";
+            this.BtnPedido.UseVisualStyleBackColor = true;
+            this.BtnPedido.Click += new System.EventHandler(this.BtnPedido_Click);
             // 
-            // button3
+            // BtnServico
             // 
-            this.button3.Location = new System.Drawing.Point(202, 194);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(221, 29);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Serviços";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnServico.Location = new System.Drawing.Point(202, 194);
+            this.BtnServico.Name = "BtnServico";
+            this.BtnServico.Size = new System.Drawing.Size(221, 29);
+            this.BtnServico.TabIndex = 3;
+            this.BtnServico.Text = "Serviços";
+            this.BtnServico.UseVisualStyleBackColor = true;
+            this.BtnServico.Click += new System.EventHandler(this.BtnServico_Click);
             // 
             // button1
             // 
@@ -83,29 +85,31 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Sair/Desconectar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button4
+            // BtnCliente
             // 
-            this.button4.Location = new System.Drawing.Point(202, 244);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(221, 29);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Clientes";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnCliente.Location = new System.Drawing.Point(202, 244);
+            this.BtnCliente.Name = "BtnCliente";
+            this.BtnCliente.Size = new System.Drawing.Size(221, 29);
+            this.BtnCliente.TabIndex = 5;
+            this.BtnCliente.Text = "Clientes";
+            this.BtnCliente.UseVisualStyleBackColor = true;
+            this.BtnCliente.Click += new System.EventHandler(this.BtnCliente_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 354);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(630, 354);
+            this.Controls.Add(this.BtnCliente);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnServico);
+            this.Controls.Add(this.BtnPedido);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BtnBDEstoque);
+            this.Controls.Add(this.BtnPecas);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sistema de Estoque - Home";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,12 +117,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BtnBDEstoque;
+        private System.Windows.Forms.Button BtnPecas;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnPedido;
+        private System.Windows.Forms.Button BtnServico;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnCliente;
     }
 }
 

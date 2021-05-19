@@ -23,5 +23,10 @@ namespace EstoqueVGUI
             this.servicosTableAdapter.Fill(this.estoqueDataSet.servicos);
 
         }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

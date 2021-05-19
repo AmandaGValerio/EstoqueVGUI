@@ -29,53 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.estoqueDataSet = new EstoqueVGUI.estoqueDataSet();
-            this.servicosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.servicosTableAdapter = new EstoqueVGUI.estoqueDataSetTableAdapters.servicosTableAdapter();
+            this.DgvServico = new System.Windows.Forms.DataGridView();
             this.idServicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.servicosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.estoqueDataSet = new EstoqueVGUI.estoqueDataSet();
+            this.servicosTableAdapter = new EstoqueVGUI.estoqueDataSetTableAdapters.servicosTableAdapter();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtNome = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtPreco = new System.Windows.Forms.TextBox();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.BtnDeletar = new System.Windows.Forms.Button();
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.estoqueDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvServico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estoqueDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DgvServico
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgvServico.AutoGenerateColumns = false;
+            this.DgvServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvServico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idServicoDataGridViewTextBoxColumn,
             this.nomeDataGridViewTextBoxColumn,
             this.precoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.servicosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 83);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(341, 290);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // estoqueDataSet
-            // 
-            this.estoqueDataSet.DataSetName = "estoqueDataSet";
-            this.estoqueDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // servicosBindingSource
-            // 
-            this.servicosBindingSource.DataMember = "servicos";
-            this.servicosBindingSource.DataSource = this.estoqueDataSet;
-            // 
-            // servicosTableAdapter
-            // 
-            this.servicosTableAdapter.ClearBeforeFill = true;
+            this.DgvServico.DataSource = this.servicosBindingSource;
+            this.DgvServico.Location = new System.Drawing.Point(24, 83);
+            this.DgvServico.Name = "DgvServico";
+            this.DgvServico.Size = new System.Drawing.Size(341, 290);
+            this.DgvServico.TabIndex = 0;
             // 
             // idServicoDataGridViewTextBoxColumn
             // 
@@ -95,6 +81,20 @@
             this.precoDataGridViewTextBoxColumn.HeaderText = "Preco";
             this.precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
             // 
+            // servicosBindingSource
+            // 
+            this.servicosBindingSource.DataMember = "servicos";
+            this.servicosBindingSource.DataSource = this.estoqueDataSet;
+            // 
+            // estoqueDataSet
+            // 
+            this.estoqueDataSet.DataSetName = "estoqueDataSet";
+            this.estoqueDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // servicosTableAdapter
+            // 
+            this.servicosTableAdapter.ClearBeforeFill = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -104,12 +104,12 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Nome:";
             // 
-            // textBox4
+            // TxtNome
             // 
-            this.textBox4.Location = new System.Drawing.Point(485, 102);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(235, 20);
-            this.textBox4.TabIndex = 22;
+            this.TxtNome.Location = new System.Drawing.Point(485, 102);
+            this.TxtNome.Name = "TxtNome";
+            this.TxtNome.Size = new System.Drawing.Size(235, 20);
+            this.TxtNome.TabIndex = 22;
             // 
             // label5
             // 
@@ -120,12 +120,12 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Preço:";
             // 
-            // textBox3
+            // TxtPreco
             // 
-            this.textBox3.Location = new System.Drawing.Point(485, 150);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(71, 20);
-            this.textBox3.TabIndex = 25;
+            this.TxtPreco.Location = new System.Drawing.Point(485, 150);
+            this.TxtPreco.Name = "TxtPreco";
+            this.TxtPreco.Size = new System.Drawing.Size(71, 20);
+            this.TxtPreco.TabIndex = 25;
             // 
             // BtnVoltar
             // 
@@ -135,6 +135,7 @@
             this.BtnVoltar.TabIndex = 29;
             this.BtnVoltar.Text = "&Voltar";
             this.BtnVoltar.UseVisualStyleBackColor = true;
+            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
             // 
             // BtnDeletar
             // 
@@ -173,16 +174,16 @@
             this.Controls.Add(this.BtnDeletar);
             this.Controls.Add(this.BtnSalvar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TxtPreco);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.TxtNome);
+            this.Controls.Add(this.DgvServico);
             this.Name = "ServicosDB";
             this.Text = "ServicosDB";
             this.Load += new System.EventHandler(this.ServicosDB_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.estoqueDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvServico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estoqueDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,7 +191,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvServico;
         private estoqueDataSet estoqueDataSet;
         private System.Windows.Forms.BindingSource servicosBindingSource;
         private estoqueDataSetTableAdapters.servicosTableAdapter servicosTableAdapter;
@@ -198,9 +199,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtNome;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtPreco;
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Button BtnDeletar;
         private System.Windows.Forms.Button BtnSalvar;
