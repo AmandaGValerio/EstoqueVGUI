@@ -165,6 +165,7 @@
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nome:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -205,7 +206,7 @@
             // 
             // BtnSalvar
             // 
-            this.BtnSalvar.Location = new System.Drawing.Point(478, 67);
+            this.BtnSalvar.Location = new System.Drawing.Point(478, 72);
             this.BtnSalvar.Name = "BtnSalvar";
             this.BtnSalvar.Size = new System.Drawing.Size(75, 23);
             this.BtnSalvar.TabIndex = 10;
@@ -214,7 +215,7 @@
             // 
             // BtnDeletar
             // 
-            this.BtnDeletar.Location = new System.Drawing.Point(478, 120);
+            this.BtnDeletar.Location = new System.Drawing.Point(478, 125);
             this.BtnDeletar.Name = "BtnDeletar";
             this.BtnDeletar.Size = new System.Drawing.Size(75, 23);
             this.BtnDeletar.TabIndex = 11;
@@ -223,7 +224,7 @@
             // 
             // BtnVoltar
             // 
-            this.BtnVoltar.Location = new System.Drawing.Point(478, 172);
+            this.BtnVoltar.Location = new System.Drawing.Point(478, 177);
             this.BtnVoltar.Name = "BtnVoltar";
             this.BtnVoltar.Size = new System.Drawing.Size(75, 23);
             this.BtnVoltar.TabIndex = 12;
