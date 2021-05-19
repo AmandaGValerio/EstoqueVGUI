@@ -16,8 +16,7 @@ namespace EstoqueVGUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            Application.Run(new Estoque());
+            Application.Run(new ClientesDB());
         }
     }
 }

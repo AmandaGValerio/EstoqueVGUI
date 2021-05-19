@@ -26,5 +26,12 @@ namespace EstoqueVGUI
         {
 
         }
+
+        private void AdicionarPedido_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'estoqueDataSet.servicos'. Você pode movê-la ou removê-la conforme necessário.
+            this.servicosTableAdapter.Fill(this.estoqueDataSet.servicos);
+
+        }
     }
 }

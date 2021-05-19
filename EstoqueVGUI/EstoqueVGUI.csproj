@@ -172,6 +172,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdicionarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdicionarPedido.Designer.cs">
+      <DependentUpon>AdicionarPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Context\EstoqueContext.cs" />
     <Compile Include="Estoque.cs">
       <SubType>Form</SubType>
@@ -190,6 +196,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientesDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesDB.Designer.cs">
+      <DependentUpon>ClientesDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Peca.cs" />
     <Compile Include="Models\Pedido.cs" />
@@ -198,8 +210,14 @@
     <Compile Include="Models\Servico.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdicionarPedido.resx">
+      <DependentUpon>AdicionarPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estoque.resx">
       <DependentUpon>Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesDB.resx">
+      <DependentUpon>ClientesDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
