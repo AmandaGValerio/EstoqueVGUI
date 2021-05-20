@@ -143,6 +143,7 @@
             this.BtnSalvar.TabIndex = 17;
             this.BtnSalvar.Text = "&Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = true;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
             // 
             // TxtNome
             // 

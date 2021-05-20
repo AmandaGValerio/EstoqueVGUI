@@ -10,6 +10,8 @@
 
 #pragma warning disable 1591
 
+using System;
+
 namespace EstoqueVGUI {
     
     
@@ -460,7 +462,12 @@ namespace EstoqueVGUI {
             xs.Add(dsSchema);
             return type;
         }
-        
+
+        internal void Load()
+        {
+            throw new NotImplementedException();
+        }
+
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public delegate void @__efmigrationshistoryRowChangeEventHandler(object sender, @__efmigrationshistoryRowChangeEvent e);
         

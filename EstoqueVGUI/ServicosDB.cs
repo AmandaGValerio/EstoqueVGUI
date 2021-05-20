@@ -28,5 +28,20 @@ namespace EstoqueVGUI
         {
             Close();
         }
+
+        private void BtnSalvar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                servicosTableAdapter.Update(estoqueDataSet.servicos);
+                //yourTableAdapter.Update(yourDataSet.tablename);
+                MessageBox.Show("Record Updated", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Some Error in Update", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

@@ -84,6 +84,7 @@
             this.DgvCliente.Name = "DgvCliente";
             this.DgvCliente.Size = new System.Drawing.Size(542, 217);
             this.DgvCliente.TabIndex = 0;
+            this.DgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCliente_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -212,6 +213,7 @@
             this.BtnSalvar.TabIndex = 10;
             this.BtnSalvar.Text = "&Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = true;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
             // 
             // BtnDeletar
             // 
@@ -236,7 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 450);
+            this.ClientSize = new System.Drawing.Size(654, 450);
             this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.BtnDeletar);
             this.Controls.Add(this.BtnSalvar);
